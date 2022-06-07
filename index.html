@@ -9,6 +9,26 @@ table, th, td {
 }
 </style>
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
 <body>
 <h1>3D animations of heat stress in Johannesburg and Ekurhuleni</h1>
 <p>3D animations of heat stress are made available for a few neighborhoods in Johannesburg and Ekurhuleni.
@@ -16,18 +36,37 @@ These were generated in the framework of the Technical project: Facilitation of 
 Heat stress for the 6th of January 2016 at 15h local time is visualised, 
 corresponding to the peak of a <a href='https://www.enca.com/weather/day-4-heat-wave-set-break-more-temperature-records' target="_blank" title='record-breaking heatwave'>record-breaking heatwave</a> over the region. </p>
 <i>Depending on your internet connection, it might take some time to load the animation. Please be patient.</i>
-<p> The following animations are available: </p>
-<p><a href="Braamfontein/braamfontein.html" target="_blank" title="Braamfontein">Braamfontein</a></p>
-<p><a href="Actonville/actonville.html" target="_blank" title="Actonville">Actonville</a></p>
-<p><a href="Primrose/primrose.html" target="_blank" title="Primrose">Primrose</a></p>
-<p><a href="Soweto/soweto.html" target="_blank" title="Soweto">Soweto</a></p>
-<p><a href="Tembisa/tembisa.html" target="_blank" title="Tembisa">Tembisa</a></p>
-<p><a href="Lombardy_present/lombardy.html" target="_blank" title="Lombardy">Lombardy</a></p>
-<p> For Lombardy, we also have animations for the same heatwave in a future climate scenario. These were calculated using the quantile bias mapping method. For more info see this report (add link): </p>
-<p><a href="Lombardy_rcp45_2030/lombardy.html" target="_blank" title="RCP4.5 2030">RCP4.5 2030</a></p>
-<p><a href="Lombardy_rcp45_2050/lombardy.html" target="_blank" title="RCP4.5 2050">RCP4.5 2050</a></p>
-<p><a href="Lombardy_rcp85_2030/lombardy.html" target="_blank" title="RCP8.5 2030">RCP8.5 2030</a></p>
-<p><a href="Lombardy_rcp85_2050/lombardy.html" target="_blank" title="RCP8.5 2050">RCP8.5 2050</a></p>
+<p> The following animations are available showing heat stress at 6th of January 2016 at 15h local time: </p>
+
+<p><a href="Braamfontein/braamfontein.html" target="_blank" title="Braamfontein"><h3>Braamfontein</h3></a></p>
+<p><a href="Actonville/actonville.html" target="_blank" title="Actonville"><h3>Actonville</h3></a></p>
+<p><a href="Primrose/primrose.html" target="_blank" title="Primrose"><h3>Primrose</h3></a></p>
+<p><a href="Soweto/soweto.html" target="_blank" title="Soweto"><h3>Soweto</h3></a></p>
+<p><a href="Tembisa/tembisa.html" target="_blank" title="Tembisa"><h3>Tembisa</h3></a></p>
+<p><a href="Lombardy_present/lombardy.html" target="_blank" title="Lombardy"><h3>Lombardy</h3></a></p>
+
+<p> For Lombardy and Primrose, we also have animations for the same heatwave in a future climate scenario. These were calculated using the quantile bias mapping method. For more info see this report (add link): </p>
+
+<div class="row">
+  <div class="column" style="background-color:lightgrey;">
+    <h3>Lombardy</h3>
+    <p><a href="Lombardy_rcp45_2030/lombardy.html" target="_blank" title="RCP4.5 2030">RCP4.5 2030</a></p>
+	<p><a href="Lombardy_rcp45_2050/lombardy.html" target="_blank" title="RCP4.5 2050">RCP4.5 2050</a></p>
+	<p><a href="Lombardy_rcp85_2030/lombardy.html" target="_blank" title="RCP8.5 2030">RCP8.5 2030</a></p>
+	<p><a href="Lombardy_rcp85_2050/lombardy.html" target="_blank" title="RCP8.5 2050">RCP8.5 2050</a></p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h3>Primrose</h3>
+    <p><a href="Primrose_rcp45_2030/primrose.html" target="_blank" title="RCP4.5 2030">RCP4.5 2030</a></p>
+	<p><a href="Primrose_rcp45_2050/primrose.html" target="_blank" title="RCP4.5 2050">RCP4.5 2050</a></p>
+	<p><a href="Primrose_rcp85_2030/primrose.html" target="_blank" title="RCP8.5 2030">RCP8.5 2030</a></p>
+	<p><a href="Primrose_rcp85_2050/primrose.html" target="_blank" title="RCP8.5 2050">RCP8.5 2050</a></p>
+  </div>
+</div>
+
+
+
+
 
 <h2>Control settings:</h2>
 <table style="width:100%">
@@ -48,7 +87,7 @@ corresponding to the peak of a <a href='https://www.enca.com/weather/day-4-heat-
   </tr>
   <tr>
     <td>Pan</td>
-    <td>Right mouse or left mouse + ctrl/metaKey</td>
+    <td>Right mouse</td>
     <td>Two-finger move</td>
   </tr>
 </table>
